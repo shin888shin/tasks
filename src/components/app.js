@@ -4,7 +4,7 @@ import CreateTask from './create-task'
 
 const tasks = [
   {
-    task: 'vacuum'
+    task: 'vacuum',
     isCompleted: false
   },
   {
