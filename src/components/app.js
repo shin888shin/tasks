@@ -4,8 +4,8 @@ import CreateTask from './create-task'
 
 const tasks = [
   {
-  	task: 'feed cats',
-  	isCompleted: false
+    task: 'vacuum'
+    isCompleted: false
   },
   {
   	task: 'wash dishes',
@@ -35,14 +35,11 @@ export default class App extends React.Component {
   	);
   }
   toggleTask(task) {
-    console.log("+++> app.js toggleTask 1: ", task);
-    console.log("+++> app.js toggleTask 2: ", this.state);
     // Object.keys(this.state.tasks).forEach(function(key) {
     //   console.log(key + ' : ' + x[key]);
     // });
 
     for(var i = 0; i < this.state.tasks.length; i++) {
-    	// console.log(this.state.tasks[i].task);
     	if (this.state.tasks[i].task === task) {
         this.state.tasks[i].isCompleted = !this.state.tasks[i].isCompleted;
     	}

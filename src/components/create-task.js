@@ -35,8 +35,6 @@ export default class List extends React.Component {
       return;
     }
 
-    console.log("+++> create-task onSubmitClick: " + task);
-    console.log("+++> handleCreate this.props.createTask: ", this.props.createTask);
     this.setState({ error: null });
     this.props.createTask(this.refs.createInput.value);
     this.refs.createInput.value = '';

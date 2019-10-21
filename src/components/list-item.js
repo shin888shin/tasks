@@ -17,7 +17,6 @@ export default class ListItem extends React.Component {
   }
 
   onSaveClick(event) {
-    // console.log("===> onSaveClick");
     event.preventDefault();
     const oldTask = this.props.task;
     const newTask = this.refs.editInput.value;
@@ -26,7 +25,6 @@ export default class ListItem extends React.Component {
   }
   renderTaskSection() {
     const { task, isCompleted } = this.props;
-    // console.log("+++> bbb: ", this.props);
     const taskStyle = {
       color: isCompleted ? 'green' : 'red',
       cursor: 'pointer'
@@ -66,8 +64,6 @@ export default class ListItem extends React.Component {
       );
   }
   render() {
-    // console.log(this.props);
-    // console.log(this.props.tasks);
   	return (
       <tr>
         {this.renderTaskSection()}
